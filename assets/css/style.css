@@ -14,6 +14,9 @@
     font-size: 20px;
 }
 
+.bd-r-2{
+    border-radius: 2px !important;
+}
 
 .fw-500{
     font-weight: 500 !important;
@@ -48,7 +51,7 @@
     outline-color: var(--primary-color) !important;
 }
 
-.text-user-login
+.text-blue
 {
     color: #0071c2 !important;
 }
@@ -65,6 +68,23 @@
     border-color: var(--primary-color);
     font-size: 700;
 }
+
+.text-toggle[aria-expanded=false] .text-expanded,
+.text-toggle[aria-expanded=true] .text-collapsed
+{
+    display: inline-block;
+}
+
+.checkbox-rs{
+    width: 18px;
+    height: 18px;
+}
+
+.text-toggle[aria-expanded=true] .text-expanded,
+.text-toggle[aria-expanded=false] .text-collapsed{
+    display: none;
+}
+
 
 .img-circle{
     border-radius: 50%;
@@ -128,7 +148,13 @@
     border-radius: 2px !important;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.08);
     display: none;
+    z-index: 999;
 }
+
+#input-filter-room2 ~ .input-list-dropdown{
+    top: 100%;
+}
+
 .input-list-dropdown > li{
     border-bottom-color: #fff;
 }
@@ -173,11 +199,27 @@
 .bl-f-0{
     border-left: 0 !important;
 }
+.br-0{
+    border-radius: 0 !important;
+}
 
 .br-r-0{
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
 }
+
+
+.br-l-0{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+
+.br-bottom-0{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
 
 .border-filter:hover{
     cursor: pointer !important;
@@ -214,8 +256,15 @@
     color: #0071c2;
 }
 
-.btn-action:hover{
-    background-color: #d2e6f2;
+.btn-action2{
+    background-color: #fff;
+    border: 1px solid #0071c2;
+    color: #0071c2;
+}
+
+.btn-action:hover,
+.btn-action2:hover{
+    background-color: #edf5f9;
 }
 
 .btn-action.disable{
@@ -224,6 +273,10 @@
     background-color: #d9d9d9 !important;
     cursor: not-allowed !important;
     box-shadow: none !important;
+}
+
+.filter-room__action2 > .btn-action.disable{
+    background-color: #fff !important;
 }
 
 
@@ -284,7 +337,36 @@
    background-color: rgb(241, 241, 241);
 }
 
-a.text-user-login:hover,
+a.text-blue:hover,
 .text-brown:hover{
     color: #b8650c !important;
+}
+
+.bg-orange{
+    background-color: #febb02;
+}
+
+#province-filter.form-control.is-invalid, .was-validated .form-control:invalid,
+#province-filter.form-control.is-valid, .was-validated .form-control:valid{
+    background-image: none;
+}
+#province-filter.form-control.is-valid, .was-validated .form-control:valid{
+    border-color: #ccc !important;
+}
+input#province-filter:focus{
+    border: none !important;
+}
+#checkin-date-filter,
+#checkout-date-filter{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#filter-more::after{
+    display: none;
+}
+.dropdown-menu-cs{
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.08);
+    border-color: #fff;
+    min-width: 320px;
 }

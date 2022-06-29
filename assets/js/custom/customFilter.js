@@ -126,7 +126,7 @@
   })
 
   $('#filter-room-form').click(function(event2){
-    event.stopPropagation();
+    event2.stopPropagation();
     $('#filter-room-form').addClass('active');
   })
 
