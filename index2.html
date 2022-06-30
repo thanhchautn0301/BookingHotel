@@ -23,7 +23,7 @@
     <div class="container-fluid fixed-top" id="nav-header">
       <div class="row bg-primary">
         <div class="col-sm-12">
-          <div class="container">
+          <div class="container px-sm-3 px-md-4">
             <nav class="navbar navbar-expand-md bg-primary">
               <div class="container-fluid px-0">
                 <div class="navbar-brand">
@@ -34,7 +34,12 @@
                     </path>
                   </svg>
                 </div>
-                <button class="navbar-toggler btn-primary" type="button" data-bs-toggle="collapse"
+                <div class="d-sm-block d-md-none flex-fill text-end me-2">
+                  <a href="" class="p-2 btn-primary bd-r-2">
+                    <i class="fa-regular fa-circle-user text-white fs-20"></i>
+                  </a>
+                </div>
+                <button class="navbar-toggler btn-primary shadow-none" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
                   aria-label="Toggle navigation">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-size toggle-icon-mb" fill="none"
@@ -43,7 +48,7 @@
                   </svg>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarContent">
-                  <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+                  <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center d-md-flex d-sm-none">
                     <li class="nav-item me-2" data-bs-toggle="tooltip" data-bs-placement="bottom"
                       title="Chọn loại tiền tệ của bạn">
                       <button class="btn btn-primary fw-500 btn-icon-nav">
@@ -78,6 +83,32 @@
                     </li>
                     <li class="nav-item">
                       <a href="" class="btn btn-sm bg-white text-blue fw-500">Đăng nhập</a>
+                    </li>
+                  </ul>
+                  <!-- Mobile navbar -->
+                  <ul class="navbar-nav 
+                  position-fixed top-0 bg-primary end-0 start-0 bottom-0 d-md-none d-sm-block">
+                    <li class="position-fixed top-0 end-0">
+                      <button class="navbar-toggler shadow-none btn-primary p-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fa-solid fa-x"></i>
+                      </button>
+                    </li>
+                    <li>
+                      <h4 class="text-white fw-bolder p-3">Khác</h4>
+                    </li>
+                    <li class="nav-item nav-item-hv p-3">
+                      <a href="" class="text-decoration-none text-white fw-500">
+                        <i class="fa-solid fa-circle-info me-2"></i>
+                        Về TLTC.com
+                      </a>
+                    </li>
+                    <li class="nav-item nav-item-hv p-3">
+                      <a href="" class="text-decoration-none text-white fw-500">
+                        <i class="fa-solid fa-scale-balanced me-2"></i>
+                        Pháp lý
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -136,7 +167,7 @@
       </div>
 
     </div>
-    <div class="container-fluid pt-3" id="accommodation-fieldset">
+    <div class="container-fluid pt-sm-0 pt-lg-3" id="accommodation-fieldset">
       <div class="row bg-primary">
         <div class="col-sm-12">
           <div class="container px-12 d-flex flex-sm-column flex-lg-row" id="accommodation-filter">

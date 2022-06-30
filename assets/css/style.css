@@ -14,6 +14,10 @@
     font-size: 20px;
 }
 
+.z-index-9999{
+    z-index: 9999 !important;
+}
+
 .bd-r-2{
     border-radius: 2px !important;
 }
@@ -99,8 +103,8 @@
 }
 
 .checkbox-rs{
-    width: 18px;
-    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
 }
 
 .text-toggle[aria-expanded=true] .text-expanded,
@@ -148,6 +152,11 @@
 .bg-bonus-r{
     background-color: #ff8000;
     border-radius: 2px;
+}
+
+.nav-item-hv:hover{
+    background-color: #648ed2;
+    cursor: pointer;
 }
 
 .btn-primary:hover{
@@ -450,3 +459,4 @@ input#province-filter:focus{
         width: 100% !important;
     }
 }
+
