@@ -5,11 +5,15 @@ $(window).scroll(function() {
     var navHeaderHeight =  document.getElementById('nav-header').clientHeight;
     var accommodationFilter = $('#accommodation-filter');
     if(heightScroll >= headerHeight){
-      accommodationField.css('position','fixed');
-      accommodationField.css('top','0');
-      accommodationField.css('z-index','999');
-      accommodationFilter.css('transform','translateY(calc('+ navHeaderHeight + 'px - 8px))');
-    }
+
+      if(document.body.clientWidth > 990){
+        accommodationField.css('position','fixed');
+        accommodationField.css('top','0');
+        accommodationField.css('z-index','999');
+        accommodationFilter.css('transform','translateY(calc('+ navHeaderHeight + 'px - 8px))');
+      }
+      }
+      
     else if(heightScroll < (headerHeight - 16)){
       accommodationField.css('position','static');
       accommodationFilter.css('transform','translateY(0)');
