@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Booking</title>
+  <title>Booking Index</title>
   <link rel="stylesheet" href="./assets/css/splide.min.css">
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/flatpickr.min.css">
@@ -74,15 +74,15 @@
                     </li>
 
                     <li class="nav-item me-2">
-                      <a href="" class="btn btn-sm btn-primary fw-500 btn-sm text-white border">
+                      <a href="login.html" class="btn btn-sm btn-primary fw-500 btn-sm text-white border">
                         Đăng chỗ nghỉ của quí vị
                       </a>
                     </li>
                     <li class="nav-item me-2">
-                      <a href="" class="btn btn-sm bg-white text-blue fw-500">Đăng ký</a>
+                      <a href="login.html" class="btn btn-sm bg-white text-blue fw-500">Đăng ký</a>
                     </li>
                     <li class="nav-item">
-                      <a href="" class="btn btn-sm bg-white text-blue fw-500">Đăng nhập</a>
+                      <a href="login.html" class="btn btn-sm bg-white text-blue fw-500">Đăng nhập</a>
                     </li>
                   </ul>
                   <!-- Mobile navbar -->
@@ -176,70 +176,70 @@
                 <i class="fa-solid fa-bed"></i>
               </span>
 
-              <input type="text" class="form-control rounded-0 fw-500 border-0 shadow-none p-3 input-drop-select"
+              <input type="text" class="form-control rounded-0 fw-500 border-0 shadow-none ps-0 p-3 input-drop-select"
                 id="input-province" placeholder="Bạn muốn đi đâu?" aria-label="filterProvince"
                 aria-describedby="filter-hotel" autocomplete="off">
               <span class="input-group-text rounded-0 border-0 bg-white p-3 d-none" id="filter-hotel">
                 <i class="fa-solid fa-xmark"></i>
               </span>
               <ul class="list-group list-group-flush input-list-dropdown" id="list-province">
-                <li class="list-group-item d-flex align-items-center" data-province="An Item">
+                <li class="list-group-item d-flex align-items-center" data-province="Vũng Tàu">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-size me-2" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
+                    stroke="currentColor" stroke-width="2" data-province="Vũng Tàu">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <div class="d-flex flex-column">
-                    <span class="fw-bold">Vũng Tàu</span>
+                  <div class="d-flex flex-column w-100" data-province="Vũng Tàu">
+                    <span class="fw-bold" data-province="Vũng Tàu">Vũng Tàu</span>
                     Việt Nam
                   </div>
                 </li>
-                <li class="list-group-item d-flex align-items-center" data-province="A second item">
+                <li class="list-group-item d-flex align-items-center" data-province="Đà Lạt">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-size me-2" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
+                    stroke="currentColor" stroke-width="2" data-province="Đà Lạt">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <div class="d-flex flex-column">
-                    <span class="fw-bold">Đà lạt</span>
+                  <div class="d-flex flex-column w-100" data-province="Đà Lạt">
+                    <span class="fw-bold" data-province="Đà Lạt">Đà lạt</span>
                     Việt Nam
                   </div>
                 </li>
-                <li class="list-group-item d-flex align-items-center" data-province="A third item">
+                <li class="list-group-item d-flex align-items-center" data-province="Đà Nẵng">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-size me-2" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
+                    stroke="currentColor" stroke-width="2" data-province="Đà Nẵng">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <div class="d-flex flex-column">
-                    <span class="fw-bold">Đà Nẵng</span>
+                  <div class="d-flex flex-column w-100"data-province="Đà Nẵng">
+                    <span class="fw-bold" data-province="Đà Nẵng">Đà Nẵng</span>
                     Việt Nam
                   </div>
                 </li>
-                <li class="list-group-item d-flex align-items-center" data-province="A fourth item">
+                <li class="list-group-item d-flex align-items-center" data-province="TP Hồ Chí Minh">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-size me-2" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
+                    stroke="currentColor" stroke-width="2" data-province="TP Hồ Chí Minh">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <div class="d-flex flex-column">
-                    <span class="fw-bold">TP Hồ Chí Minh</span>
+                  <div class="d-flex flex-column w-100" data-province="TP Hồ Chí Minh">
+                    <span class="fw-bold" data-province="TP Hồ Chí Minh">TP Hồ Chí Minh</span>
                     Việt Nam
                   </div>
                 </li>
-                <li class="list-group-item d-flex align-items-center" data-province="And a fifth one">
+                <li class="list-group-item d-flex align-items-center" data-province="Nha Trang">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon-size me-2" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor" stroke-width="2">
+                    stroke="currentColor" stroke-width="2" data-province="Nha Trang">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
-                  <div class="d-flex flex-column">
-                    <span class="fw-bold">Nha Trang</span>
+                  <div class="d-flex flex-column w-100" data-province="Nha Trang">
+                    <span class="fw-bold" data-province="Nha Trang">Nha Trang</span>
                     Việt Nam
                   </div>
                 </li>
@@ -250,7 +250,7 @@
                 <i class="fa-solid fa-calendar"></i>
               </span>
 
-              <input type="text" class="form-control shadow-none fw-500 rounded-0 p-c
+              <input type="text" class="form-control shadow-none fw-500 rounded-0 ps-0 p-c
                border-0 p-3 input-drop-select position-relative" id="input-filter-date" aria-label="filterDate"
                 value="Nhận phòng - Trả phòng" aria-describedby="filter-date" autocomplete="off">
             </div>
@@ -259,7 +259,7 @@
                 <i class="fa-solid fa-user"></i>
               </span>
 
-              <input type="text" class="form-control shadow-none fw-500 rounded-0 p-c border-0 p-3 input-drop-select"
+              <input type="text" class="form-control shadow-none ps-0 fw-500 rounded-0 p-c border-0 p-3 input-drop-select"
                 id="input-filter-room" value="2 người lớn - 0 trẻ em - 1 phòng" aria-label="filterRoom"
                 aria-describedby="filter-date" autocomplete="off" readonly>
 
@@ -329,7 +329,6 @@
     </div>
   </header>
 
-  <!-- Begin Section -->
   <div class="mt-4">
     <div class="container">
       <div class="row">
@@ -363,102 +362,120 @@
       </div>
       <div class="row"> 
         <div class="col-sm-12 gy-4">
-          <div class="splide"  role="group" aria-labelledby="travel-desc"
-          >
-          <h4 class="fw-bold" id="travel-desc">Khám phá Việt Nam</h4>
+          <div class="splide">
+          <h4 class="fw-bold">Khám phá Việt Nam</h4>
           <p class="text-secondary">Các điểm đến phổ biến này có nhiều điều chờ đón bạn</p>
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/dalat.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Đà Lạt</p>
-                      <p class="text-secondary">5,605 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">5,605 chỗ nghỉ</p>
                     </div>
                   </a>
-                </li>
                 
-                <li class="splide__slide d-inline-block w-0 me-3">
+                
+                </li>
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/hotram.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Hồ Tràm</p>
-                      <p class="text-secondary">2,144 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">2,144 chỗ nghỉ</p>
                     </div>
                   </a>
+                
+                
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/nhatrang.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Nha Trang</p>
-                      <p class="text-secondary">321 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">321 chỗ nghỉ</p>
                     </div>
                   </a>
+                
+                
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/hcm.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">TP Hồ Chí Minh</p>
-                      <p class="text-secondary">432 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">432 chỗ nghỉ</p>
                     </div>
                   </a>
+                
+                
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/muine.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Mũi Né</p>
-                      <p class="text-secondary">269 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">269 chỗ nghỉ</p>
                     </div>
                   </a>
+                
+                
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/vungtay.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Vũng Tàu</p>
-                      <p class="text-secondary">123 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">123 chỗ nghỉ</p>
                     </div>
                   </a>
+                
+                
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/phuquoc.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Phú Quốc</p>
-                      <p class="text-secondary">456 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">456 chỗ nghỉ</p>
                     </div>
                   </a>
+                
+                
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/phan_thiet.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Phan Thiết</p>
-                      <p class="text-secondary">789 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">789 chỗ nghỉ</p>
                     </div>
                   </a>
+                
+                
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/tuong_phat_ba_quan_am_nui_ba_den.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Núi Bà Đen</p>
-                      <p class="text-secondary">14 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">14 chỗ nghỉ</p>
                     </div>
                   </a>
+                
+                
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/travelList/sapa.jpg" class="img-carousel" alt="sapaPhoto">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Sa Pa</p>
-                      <p class="text-secondary">21 chỗ nghỉ</p>
+                      <p class="text-secondary fs-14">21 chỗ nghỉ</p>
                     </div>
                   </a>
+                
+                
                 </li>
               </ul>
             </div>
@@ -467,108 +484,107 @@
       </div> 
       <div class="row"> 
         <div class="col-sm-12 gy-4">
-          <div class="splide splide2"  role="group" aria-labelledby="hotels-desc"
-          >
-          <h4 class="h4 fw-bold mb-3" id="hotels-desc">Tìm theo loại chỗ nghỉ</h4>
+          <div class="splide splide2">
+          <h4 class="h4 fw-bold mb-3">Tìm theo loại chỗ nghỉ</h4>
             <div class="splide__track">
               <ul class="splide__list">
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/bietthu.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Biệt Thự</p>
-                      <p class="text-secondary">1505 biệt thự</p>
+                      <p class="text-secondary fs-14">1505 biệt thự</p>
                     </div>
                   </a>
                 </li>
                 
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/canho.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Căn hộ</p>
-                      <p class="text-secondary">144 căn hộ</p>
+                      <p class="text-secondary fs-14">144 căn hộ</p>
                     </div>
                   </a>
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/nhanghithonque.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Nhà nghỉ thôn quê</p>
-                      <p class="text-secondary">32 nhà nghỉ thôn quê</p>
+                      <p class="text-secondary fs-14">32 nhà nghỉ thôn quê</p>
                     </div>
                   </a>
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/khachsan.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Khách sạn</p>
-                      <p class="text-secondary">132 khách sạn</p>
+                      <p class="text-secondary fs-14">132 khách sạn</p>
                     </div>
                   </a>
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/khachsantupv.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Khách sạn tự phục vụ</p>
-                      <p class="text-secondary">269 khách sạn tự phục vụ</p>
+                      <p class="text-secondary fs-14">269 khách sạn tự phục vụ</p>
                     </div>
                   </a>
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/nhago.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Nhà gỗ</p>
-                      <p class="text-secondary">123 nhà gỗ</p>
+                      <p class="text-secondary fs-14">123 nhà gỗ</p>
                     </div>
                   </a>
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/nhanghinongthon.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Nhà nghỉ nông thôn</p>
-                      <p class="text-secondary">456 nhà nghỉ nông thôn</p>
+                      <p class="text-secondary fs-14">456 nhà nghỉ nông thôn</p>
                     </div>
                   </a>
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/nhanho.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Nhà nhỏ</p>
-                      <p class="text-secondary">789 nhà nhỏ</p>
+                      <p class="text-secondary fs-14">789 nhà nhỏ</p>
                     </div>
                   </a>
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/nhathuyen.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Nhà thuyền</p>
-                      <p class="text-secondary">14 nhà thuyền</p>
+                      <p class="text-secondary fs-14">14 nhà thuyền</p>
                     </div>
                   </a>
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/resort.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Resort</p>
-                      <p class="text-secondary">211 resort</p>
+                      <p class="text-secondary fs-14">211 resort</p>
                     </div>
                   </a>
                 </li>
-                <li class="splide__slide d-inline-block w-0 me-3">
+                <li class="splide__slide">
                   <a href="" class="text-decoration-none">
                     <img src="./assets/img/hotelcategories/trang-tri-leu-trai-6.jpg" class="img-carousel" alt="">
                     <div>
                       <p class="fw-bold text-black mb-0 mt-1">Lều trại</p>
-                      <p class="text-secondary">169 lều trại</p>
+                      <p class="text-secondary fs-14">169 lều trại</p>
                     </div>
                   </a>
                 </li>
@@ -753,6 +769,9 @@
         </div>
       </div>
     </div>
+  </div> 
+
+  <section>
     <div class="container-fluid">
       <div class="row bg-footer">
         <div class="col-sm-12">
@@ -761,8 +780,8 @@
             <p class="text-center" style="color: #bdbdbd;">Hãy đăng ký và chúng tôi sẽ gửi những ưu đãi tốt nhất cho bạn</p>
           </div>
           <div class="">
-            <form action="" class="needs-validation d-flex justify-content-center" >
-              <input type="email" class="p-2 me-1 text-black-50 fs-20 w-25" placeholder="Địa chỉ email của bạn" required>
+            <form action="" class="needs-validation d-flex justify-content-center px-4">
+              <input type="email" class="p-2 me-1 text-black-50 fs-20 flex-sm-grow-1 flex-xl-grow-0 w-25" placeholder="Địa chỉ email của bạn" required>
               <button class="btn btn-primary2 fs-1-2 text-white px-5" type="submit">Đăng ký</button>
             </form>
           </div>
@@ -792,8 +811,7 @@
         </div>
       </div>
     </div>
-  </div> <!--End of Section-->
-
+  </section>
 
   <footer class="footer">
     <div class="container">
@@ -877,6 +895,8 @@
   </footer>
 
 
+  
+
   <script src="./assets/js/jquery-3.6.0.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
@@ -888,6 +908,7 @@
   <script src="./assets/js/custom/inputFilterDate.js"></script>
   <script src="./assets/js/custom/customFilter.js"></script>
   <script src="./assets/js/custom/carouselSplide.js"></script>
+
 </body>
 
 </html>

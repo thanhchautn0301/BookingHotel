@@ -5,16 +5,16 @@ $("#input-filter-date").flatpickr({
     dateFormat: "d-m-Y"
   });
 
-  let countClick = 0;
-  $("#input-filter-date").click(function(){
-      countClick+=1;
-      if(countClick%2==0){
-        $('.flatpickr-calendar').removeClass('open');
-      }
-      else{
-        $('.flatpickr-calendar').addClass('open');
-      }
-  })
+let countClick = 0;
+$("#input-filter-date").click(function(){
+    countClick+=1;
+    if(countClick%2==0){
+      $('.flatpickr-calendar').removeClass('open');
+    }
+    else{
+      $('.flatpickr-calendar').addClass('open');
+    }
+})
 
 
 
@@ -55,5 +55,18 @@ var endPicker = $('#checkout-date-filter').flatpickr({
 });
 
 
+
+$("#check-room-date").flatpickr({   
+  mode: "range",
+  showMonths: 2,
+  minDate: "today",
+  dateFormat: "d-m-Y",
+  defaultDate: 'today'
+});
+
+$('.flatpickr-input:visible').on('focus', function () {
+  $(this).blur()
+})
+$('.flatpickr-input:visible').prop('readonly', false)
 
 
