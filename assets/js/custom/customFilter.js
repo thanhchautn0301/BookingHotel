@@ -123,6 +123,9 @@
   inputFilterRoom.click(function(event){
     event.stopPropagation();
     $('#filter-room-form').toggleClass('active');
+    if($('#filter-room-form').hasClass('active')){
+      $('#filter-room-form').add('active');
+    }
   })
 
   $('#filter-room-form').click(function(event2){

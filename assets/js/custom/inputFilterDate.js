@@ -5,15 +5,17 @@ $("#input-filter-date").flatpickr({
     dateFormat: "d-m-Y"
   });
 
-let countClick = 0;
 $("#input-filter-date").click(function(){
-    countClick+=1;
-    if(countClick%2==0){
-      $('.flatpickr-calendar').removeClass('open');
-    }
-    else{
-      $('.flatpickr-calendar').addClass('open');
-    }
+
+    // if(!$('.flatpickr-calendar').hasClass('open')){
+    //   $('.flatpickr-calendar').addClass('open'); 
+    // }
+    
+    // else{
+    //   $('.flatpickr-calendar').removeClass('open');
+    // }
+
+    
 })
 
 
