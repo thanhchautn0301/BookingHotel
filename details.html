@@ -147,7 +147,7 @@
             </li>
             <li class="nav-item me-2 my-sm-1 my-xl-0">
               <a href="" class="nav-link h-ft-btn text-white btn btn-primary fw-400 bd-rd-999">
-                <i class="fa-solid fa-ferris-wheel"></i>
+                <i class="fa-solid fa-map-location"></i>
                 Địa điểm tham quan
               </a>
             </li>
@@ -350,9 +350,9 @@
                 </div>
                 <div class="d-flex align-items-center">
                   <i class="fa-regular fa-heart fs-20 text-blue me-3"></i>
-                  <button class="btn btn-primary2 bd-r-2 text-white" type="button">
+                  <a href="#table-hotel" class="btn btn-primary2 bd-r-2 text-white" type="button">
                     Đặt ngay
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="mt-1">
@@ -369,7 +369,7 @@
                 <div class="col-sm-12 mb-2">
                   <div class="row">
                     <div class="col-sm-4 pe-1">
-                      <div class="row">
+                      <div class="row h-100">
                         <div class="col-sm-12 mb-2">
                           <img src="./assets/img/testimg.jpg" class="shadow-fade h-17 w-100 bd-r-2" alt="" />
                         </div>
@@ -1378,87 +1378,88 @@
 
   <!--Hotel Image Modal -->
   <div class="modal fade" id="hotel-img-modal" tabindex="-1" aria-labelledby="hotelImgLabel" aria-hidden="true">
-    <div class="modal-dialog py-sm-3 px-sm-3 m-0 px-lg-4 py-lg-4 h-100 img-modal">
-      <div class="modal-content bd-r-2">
+    <div class="modal-dialog py-sm-3 px-sm-3 m-0 px-lg-4 py-lg-4 img-modal">
+      <div class="modal-content overflow-hidden bd-r-2">
         <div class="modal-header">
             <button data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
             aria-expanded="false" role="button" aria-controls="zoom-in-img"
-             class="btn ps-0 py-0 shadow-none btn-close-zoom d-none">
+             class="btn px-0 py-0 shadow-none btn-close-zoom invisible">
               <span class="">
                 <i class="fa-solid fa-arrow-left me-2"></i>
               </span>
               <span class="fw-500">Thư viện ảnh</span> 
             </button>
-          <h5 class="modal-title text-center flex-fill" id="hotelImgLabel">
-            Khách sạn Thành Trâu
+          <h5 class="modal-title text-center flex-fill pe-5 me-3" id="hotelImgLabel">
+            Khách sạn Thành Trâu  Thành Trâu
           </h5>
           <button type="button" class="btn-close ms-0" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body p-0">
           <div class="container-fluid">
-            <div class="row">
+            <div class="row row-m-h">
               <div class="col-sm-12 col-lg-9">
                 <!-- Show Image -->
-                <div class="row modal-img-scroll">
-                  <div class="col-sm-6 flex-grow-0 col-lg-3 g-2">
-                    <div class="overflow-hidden img-thumbnail" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
+                <div class="row modal-img-scroll pb-1">
+                  <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
+                    <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
                       <img src="./assets/img/rosie/-RosiesAreRosieDay-rose-blackpink-42630481-750-844.jpg" class="img-hover h-17 w-100 bd-r-4" alt="" />
-                    </div>
                   </div>
-                  <div class="col-sm-6 flex-grow-0 col-lg-3 g-2">
-                    <div class="overflow-hidden img-thumbnail" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
+                  </div>
+                  <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
+                    <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
                       <img src="./assets/img/rosie/823347377556e4b2eb3a852b5c02369a.png" class="img-hover h-17 w-100 bd-r-4" alt="" />
                     </div>
                   </div>
-                  <div class="col-sm-6 flex-grow-0 col-lg-3 g-2">
-                    <div class="overflow-hidden img-thumbnail" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
+                  <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
+                    <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
                       <img src="./assets/img/rosie/8df8483d-334b-4794-9522-8345673a4fb6.jpg" class="img-hover h-17 w-100 bd-r-4" alt="" />
                     </div>
                   </div>
-                  <div class="col-sm-6 flex-grow-0 col-lg-3 g-2">
-                    <div class="overflow-hidden img-thumbnail" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
+                  <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
+                    <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
                       <img src="./assets/img/rosie/a39c9930-ccc7-11ec-9c78-050901070303-compressed.jpg" class="img-hover h-17 w-100 bd-r-4" alt="" />
                     </div>
                   </div>
-                  <div class="col-sm-6 flex-grow-0 col-lg-3 g-2">
-                    <div class="overflow-hidden img-thumbnail" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
+                  <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
+                    <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
                       <img src="./assets/img/rosie/blackpinks_rose_style_0.jpg" class="img-hover h-17 w-100 bd-r-4" alt="" />
                     </div>
                   </div>
-                  <div class="col-sm-6 flex-grow-0 col-lg-3 g-2">
-                    <div class="overflow-hidden img-thumbnail" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
+                  <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
+                    <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
                       <img src="./assets/img/rosie/cb09b6c6b679db47c81299ee06ffa16d.png" class="img-hover h-17 w-100 bd-r-4" alt="" />
                     </div>
                   </div>
-                  <div class="col-sm-6 flex-grow-0 col-lg-3 g-2">
-                    <div class="overflow-hidden img-thumbnail" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
+                  <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
+                    <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
                       <img src="./assets/img/rosie/photo-1643307548224-16433075491651886651524.jpg" class="img-hover h-17 w-100 bd-r-4" alt="" />
                     </div>
                   </div>
-                  <div class="col-sm-6 flex-grow-0 col-lg-3 g-2">
-                    <div class="overflow-hidden img-thumbnail" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
+                  <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
+                    <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
                       <img src="./assets/img/rosie/rose-blackpink-pha-moi-ky-luc-voi-san-pham-am-nhac-solo-dau-tay.jpeg" class="img-hover h-17 w-100 bd-r-4" alt="" />
                     </div>
                   </div>
-                  <div class="col-sm-6 flex-grow-0 col-lg-3 g-2">
-                    <div class="overflow-hidden img-thumbnail" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
+                  <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
+                    <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
                       <img src="./assets/img/rosie/rosie2.jpg" class="img-hover h-17 w-100 bd-r-4" alt="" />
                     </div>
                   </div>
+                  
                 </div>
                 <!-- Zoom Image -->
                 <div class="row py-2 zoom-img d-none" id="zoom-in-img">
                   <div class="col-12 h-100 px-0 d-flex flex-column justify-content-center align-items-center">
-                    <section class="splide h-75 w-75 flex-fill">
+                    <section class="splide h-75 w-75 flex-fill" id="slider-show">
                       <div class="splide__track h-100">
                         <ul class="splide__list">
                           <li class="splide__slide w-100 h-100">
@@ -1486,13 +1487,13 @@
                           <li class="splide__slide w-100 h-100">
                             <img src="./assets/img/rosie/rose-blackpink-pha-moi-ky-luc-voi-san-pham-am-nhac-solo-dau-tay.jpeg" class="bd-r-4 w-100 h-100 mb-3" alt="" />
                           </li>
-                          <li class="splide__slide w-100 h-100">
+                          <li class="splide__slide w-100 h-100" data-src="rosie2.jpg">
                             <img src="./assets/img/rosie/rosie2.jpg" class="bd-r-4 w-100 h-100 mb-3" alt="" />
                           </li>
                         </ul>
                       </div> 
                     </section>
-                    <section class="splide splide2 w-75 h-25 p-4" id="slider-show">
+                    <section class="splide splide2 w-75 h-25 p-sm-2 p-lg-4" id="slider-thumbnail">
                       <div class="splide__track h-100 mx-4">
                         <ul class="splide__list">
                           <li class="splide__slide h-100 op-0-5">

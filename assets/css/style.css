@@ -14,6 +14,10 @@ body::-webkit-scrollbar{
     background-color: #fafafa;
     width: 10px;
 }
+/* * > html > body */
+html{
+    scroll-behavior: smooth;
+}
 
 .primary-text{
     color: var(--primary-color);
@@ -595,7 +599,8 @@ input#province-filter:focus{
 
 
 .h-17{
-    height: 170px;
+    min-height: 100%;
+    max-height: 170px;
 }
 .h-11{
     height: 110px;
@@ -633,12 +638,24 @@ input#province-filter:focus{
     cursor: pointer;
 }
 
+
 .img-hover:hover{
-   transform: scale(1.1);
+    transform: scale(1.1);
+    filter: brightness(80%);
 } 
 .modal-img-scroll{
     max-height: 600px;
-    overflow-y: auto;   
+    overflow-y: auto; 
+    animation: fadeModalImg .5s ease;
+}
+
+@keyframes fadeModalImg{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 
@@ -662,9 +679,18 @@ input#province-filter:focus{
     border-bottom: 1px solid #cd8900;
 }
 
+.obj-fit{
+    object-fit: contain !important;
+}
+
+.row-m-h{
+    height:  600px;
+    overflow: hidden;
+}
+
 .zoom-img{
-    height: 600px;
-    max-height: 100%;
+    max-height: 600px;
+    animation: fadeModalImg .5s ease;
 }
 .m-r-17{
     margin-right: 17px;
@@ -672,27 +698,27 @@ input#province-filter:focus{
 
 @media screen and (min-width: 600px){
     .zoom-img,.modal-img-scroll{
-        max-height: 300px;
+       height: 300px;
     }
     .modal-img-scroll2{
-        height: 325px;
+       height: 325px;
     }
     
 }
 
 @media screen and (min-width: 768px){
     .zoom-img,.modal-img-scroll{
-        max-height: 400px;
+        height: 300px;
     }
     .modal-img-scroll2{
-        height: 450px;
+        height: 350px;
     }
     
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1000px){
     .zoom-img,.modal-img-scroll{
-        max-height: 600px;
+        height: 600px;
     }
     .modal-img-scroll2{
         height: 525px;
