@@ -46,6 +46,4 @@ var splide = new Splide(".splide", {
   btnCloseZoom.addEventListener('click', function(){
     btnCloseZoom.classList.add('invisible');
     colShowImg.classList.remove('d-none');
-    document.getElementById('hotel-img-modal').style.overflow = 'hidden';
-
   })

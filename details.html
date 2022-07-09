@@ -1377,7 +1377,7 @@
   </footer>
 
   <!--Hotel Image Modal -->
-  <div class="modal fade" id="hotel-img-modal" tabindex="-1" aria-labelledby="hotelImgLabel" aria-hidden="true">
+  <div class="modal fade overflow-hidden" id="hotel-img-modal" tabindex="-1" aria-labelledby="hotelImgLabel" aria-hidden="true">
     <div class="modal-dialog py-sm-3 px-sm-3 m-0 px-lg-4 py-lg-4 img-modal">
       <div class="modal-content overflow-hidden bd-r-2">
         <div class="modal-header">
@@ -1397,9 +1397,9 @@
         <div class="modal-body p-0">
           <div class="container-fluid">
             <div class="row row-m-h">
-              <div class="col-sm-12 col-lg-9">
+              <div class="col-sm-12 col-sm-h-50 col-lg-h-50 h-100 col-lg-9">
                 <!-- Show Image -->
-                <div class="row modal-img-scroll pb-1">
+                <div class="row h-100 modal-img-scroll pb-1">
                   <div class="col-sm-6 flex-grow-0 col-lg-3 gx-2 gy-1">
                     <div class="overflow-hidden img-thumbnail h-100" data-bs-toggle="collapse" data-bs-target="#zoom-in-img"
                       aria-expanded="false" role="button" aria-controls="zoom-in-img">
@@ -1457,7 +1457,7 @@
                   
                 </div>
                 <!-- Zoom Image -->
-                <div class="row py-2 zoom-img d-none" id="zoom-in-img">
+                <div class="row h-100 py-2 zoom-img d-none" id="zoom-in-img">
                   <div class="col-12 h-100 px-0 d-flex flex-column justify-content-center align-items-center">
                     <section class="splide h-75 w-75 flex-fill" id="slider-show">
                       <div class="splide__track h-100">
@@ -1518,10 +1518,10 @@
                           <li class="splide__slide h-100 op-0-5">
                             <img src="./assets/img/rosie/photo-1643307548224-16433075491651886651524.jpg" class="w-100 h-100 bd-r-2" alt="" />
                           </li>
-                          <li class="splide__slide op-0-5">
+                          <li class="splide__slide h-100 op-0-5">
                             <img src="./assets/img/rosie/rose-blackpink-pha-moi-ky-luc-voi-san-pham-am-nhac-solo-dau-tay.jpeg" class="w-100 h-100 bd-r-2" alt="" />
                           </li>
-                          <li class="splide__slide op-0-5">
+                          <li class="splide__slide h-100 op-0-5">
                             <img src="./assets/img/rosie/rosie2.jpg" class="w-100 h-100 bd-r-2" alt="" />
                           </li>
                         </ul>
@@ -1530,9 +1530,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-12 col-lg-3">
+              <div class="col-sm-12 col-sm-h-50 col-lg-h-50 h-100 col-lg-3">
                 <!--Rate Point-->
-                <div class="row">
+                <div class="row h-100 flex-column flex-nowrap">
                   <div class="col-sm-12 gx-0">
                     <div class="d-flex align-items-center p-2 border border-top-0">
                       <span class="bg-primary p-2 bd-r-4 text-white fw-bold br-l-b-0">7.7</span>
@@ -1542,10 +1542,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <!--User Feedback  -->
-                <div class="row modal-img-scroll2">
-                  <div class="col-sm-12 border-start">
+                  <div class="col-sm-12 overflow-y-auto flex-fill border-start">
                     <div class="">
                       <div class="fs-14 text-dark fw-500 py-2">
                         Điều khách yêu thích nhất
@@ -1653,6 +1650,8 @@
                     </div>
                   </div>
                 </div>
+                <!--User Feedback  -->
+
               </div>
             </div>
           </div>

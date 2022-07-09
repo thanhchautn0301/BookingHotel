@@ -644,7 +644,6 @@ input#province-filter:focus{
     filter: brightness(80%);
 } 
 .modal-img-scroll{
-    max-height: 600px;
     overflow-y: auto; 
     animation: fadeModalImg .5s ease;
 }
@@ -659,20 +658,22 @@ input#province-filter:focus{
 }
 
 
-.user-comment-scroll{
-    max-height: 350px;
-    overflow-y: auto;
-}
-
 .splide__track--nav>.splide__list>.splide__slide.is-active {
     border: none;
     opacity: 1;
 }
-.modal-img-scroll2{
-    height: 525px;
-    max-height: 100%;
+
+
+.overflow-y-auto{
     overflow-y: auto;
 }
+
+
+.overflow-y-none{
+    overflow-y: hidden;
+}
+
+
 .room-check{
     background-color: #ffe08a;
     border-top: 1px solid #cd8900;
@@ -684,12 +685,11 @@ input#province-filter:focus{
 }
 
 .row-m-h{
-    height:  600px;
+    height: calc(100vh - 108px);
     overflow: hidden;
 }
 
 .zoom-img{
-    max-height: 600px;
     animation: fadeModalImg .5s ease;
 }
 .m-r-17{
@@ -697,31 +697,22 @@ input#province-filter:focus{
 }
 
 @media screen and (min-width: 600px){
-    .zoom-img,.modal-img-scroll{
-       height: 300px;
-    }
-    .modal-img-scroll2{
-       height: 325px;
+    .col-sm-h-50{
+       height: 50% !important;
     }
     
 }
 
 @media screen and (min-width: 768px){
-    .zoom-img,.modal-img-scroll{
-        height: 300px;
-    }
-    .modal-img-scroll2{
-        height: 350px;
+    .col-md-h-50{
+        height: 50% !important;
     }
     
 }
 
-@media screen and (min-width: 1000px){
-    .zoom-img,.modal-img-scroll{
-        height: 600px;
-    }
-    .modal-img-scroll2{
-        height: 525px;
+@media screen and (min-width: 992px){
+    .col-lg-h-50{
+        height: 100% !important;
     }
     
 }
