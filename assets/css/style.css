@@ -236,7 +236,7 @@ body::-webkit-scrollbar-thumb{
     border-radius: 2px;
 }
 
-.bg-footer{
+.bg-footer-grey{
     background-color: #f5f5f5;
 }
 
@@ -935,6 +935,9 @@ table{
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
 }
+
+
+
 .login-bg{
     min-height: 300px;
     max-height: 500px;
@@ -952,14 +955,11 @@ div.error-class{
     font-size: 14px;
     font-weight: 400;
 }
-.input-group input.error-class{
-    border-color: red transparent red red !important;
-}
-input.error-class{
-    border-color: red !important;
-}
+
+ input.error-class,
+.input-group input.error-class,
 .input-group input.error-class~span{
-    border-color: red red red transparent!important;
+    border-color: red !important;
 }
 .input-group input:focus ~ span{
     border-color: #86b7fe;
@@ -978,3 +978,22 @@ input.error-class{
 .input-group input.valid-class~span{
     color: #4BB543;
 }
+
+.hidden-arrow::-webkit-outer-spin-button,
+.hidden-arrow::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#dob.form-control[readonly]{
+    background-color: white !important;
+}
+
+input.ignore-validate{
+    border-color: #ced4da !important;
+}
+
+.dashboard-login-body .flatpickr-calendar.animate.arrowTop.arrowLeft.open{
+    margin-left: 0;
+}
+
