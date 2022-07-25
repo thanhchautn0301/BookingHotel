@@ -38,7 +38,7 @@ loginForm.addEventListener('submit',function(event){
         if(resultCheck){
             
             if(passwordInput.value !== passwordConfirmInput.value){
-                passwordConfirmInput.classList.add('invalid');
+                passwordInput.classList.remove('invalid');
                 passwordConfirmInput.classList.add('invalid');
                 document.querySelector('.invalid-feedback.invalid-password-feedback').style.display = "none";
                 document.querySelector('.invalid-feedback.invalid-password-cf-feedback').style.display = 'block';
