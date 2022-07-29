@@ -93,6 +93,7 @@ body::-webkit-scrollbar-thumb{
     outline-color: var(--primary-color) !important;
 }
 
+.active-page,
 .text-blue
 {
     color: #0071c2 !important;
@@ -193,10 +194,16 @@ body::-webkit-scrollbar-thumb{
     color: #923e01;
 }
 
+
 .user-icon-size,
 .rate-icon-size{
     width: 28px;
     height: 28px;
+}
+
+.user-setting-icon{
+    width: 48px;
+    height: 48px;
 }
 
 .user-icon-size-l{
@@ -238,6 +245,14 @@ body::-webkit-scrollbar-thumb{
 
 .bg-footer-grey{
     background-color: #f5f5f5;
+}
+
+.user-setting-option:hover{
+    color: #0071c2 !important;
+}
+
+.bg-user-light-grey{
+    background-color: rgb(243, 243, 243);
 }
 
 .nav-item-hv:hover{
@@ -765,6 +780,8 @@ input#province-filter:focus{
 .b-l-hotel{
     border-left: 1px solid #5bbaff;
 }
+
+
 .bg-book-room,
 .bg-fade-blue{
     background-color: #ebf3ff !important;
@@ -845,6 +862,8 @@ table{
     position: absolute;
     top: calc(100% + 8px);
     right: 0;
+    min-width: 240px !important;
+    z-index: 999; 
 }
 .user-features > li:hover{
     background-color: rgb(234, 234, 234);
@@ -904,7 +923,7 @@ table{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('/assets/img/booking-success.png');
+    background-image: url('https://cdn-icons-png.flaticon.com/512/6907/6907368.png');
     background-repeat: no-repeat;
     background-size: 75%;
     z-index: -1;
@@ -936,7 +955,9 @@ table{
     border-radius: 16px;
 }
 
-
+.h-min-400{
+    min-height: 400px;
+}
 
 .login-bg{
     min-height: 300px;
@@ -961,9 +982,15 @@ div.error-class{
 .input-group input.error-class~span{
     border-color: red !important;
 }
+
+input.error-class:focus,
+.input-group input.error-class~span,
+.input-group input.error-class:focus ~ span,
+.input-group input.invalid:focus ~ span,
+.input-group input.invalid ~ span,
+input:focus,
 .input-group input:focus ~ span{
-    border-color: #86b7fe;
-    color: #86b7fe;
+    color: #333 !important;
 }
 .input-group input.error-class~span,
 .input-group input.error-class:focus ~ span,
@@ -971,13 +998,15 @@ div.error-class{
 .input-group input.invalid ~ span{
     color: red;
 }
-.input-group input.valid-class,
-.input-group input.valid-class~span{
-    border-color: #4BB543;
+input:focus.valid-class,
+input:focus.valid-class~span,
+.input-group input:focus.valid-class,
+.input-group input:focus.valid-class~span{
+    border-color: #4BB543 !important;
 }
-.input-group input.valid-class~span{
+/* .input-group input.valid-class~span{
     color: #4BB543;
-}
+} */
 
 .hidden-arrow::-webkit-outer-spin-button,
 .hidden-arrow::-webkit-inner-spin-button {
@@ -997,3 +1026,32 @@ input.ignore-validate{
     margin-left: 0;
 }
 
+.expanded-field[aria-expanded=true]{
+    display: none;
+}
+
+.expanded-field[aria-expanded=false]{
+    display: block;
+}
+
+.expanded-field[aria-expanded=false] ~ .collapsed-field{
+    display: none;
+}
+
+.underline-hover:hover{
+    text-decoration: underline;
+}
+
+.m-w-250{
+    max-width: 250px;
+}
+
+
+
+#user-password-change .error-class{
+    max-width: 520px;
+}
+
+.send-mail-user{
+    animation:slide-top 0.3s linear both}@keyframes slide-top{0%{transform:translateY(100px)}100%{transform:translateY(0)}
+}

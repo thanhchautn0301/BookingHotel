@@ -101,9 +101,7 @@ flatpickr("#dob", {
  });
 
 
-$('#registerModal #create-account-form').rules('add',{
-    pattern: "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$"
-})
+
 
 $('#create-account-link').on('click',function(){
     createAccount.resetForm();

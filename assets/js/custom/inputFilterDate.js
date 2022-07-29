@@ -25,13 +25,11 @@ var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' 
 var startPicker = $('#checkin-date-filter').flatpickr({
   minDate: "today",
   onChange: function(selectedDates, dateStr, instance) {
-        $('#checkin-date-filter').val(new Date(dateStr).toLocaleDateString("vi-VN",options));
+        $('#checkin-date-filter').val(dateStr);
           if($('#checkout-date-filter').data("date-value") === "" || new Date(dateStr) > new Date($('#checkout-date-filter').data("date-value"))){     
             $('#checkout-date-filter').data("date-value",dateStr)
             endPicker.setDate(new Date(dateStr));
-            $('#checkout-date-filter').val(new Date(dateStr).toLocaleDateString("vi-VN",options));
-            console.log($('#checkin-date-filter').data("date-value"));
-            console.log($('#checkout-date-filter').data("date-value"));
+            $('#checkout-date-filter').val(dateStr);
         }  
          $('#checkin-date-filter').data("date-value",dateStr)
 
@@ -41,14 +39,12 @@ var startPicker = $('#checkin-date-filter').flatpickr({
 var endPicker = $('#checkout-date-filter').flatpickr({
   minDate: "today",
   onChange: function(selectedDates, dateStr, instance) {
-        $('#checkout-date-filter').val(new Date(dateStr).toLocaleDateString("vi-VN",options));
+        $('#checkout-date-filter').val(dateStr);
         
         if($('#checkin-date-filter').data("date-value") === "" || new Date(dateStr) < new Date($('#checkin-date-filter').data("date-value"))){
           $('#checkin-date-filter').data("date-value",dateStr)
           startPicker.setDate(new Date(dateStr));
-          $('#checkin-date-filter').val(new Date(dateStr).toLocaleDateString("vi-VN",options));
-          console.log($('#checkin-date-filter').data("date-value"));
-          console.log($('#checkout-date-filter').data("date-value"));
+          $('#checkin-date-filter').val(dateStr);
         }   
         $('#checkout-date-filter').data("date-value",dateStr)
         
