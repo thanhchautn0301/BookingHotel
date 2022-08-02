@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./assets/css/select2.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==
     " crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>TLTC.com</title>
 </head>
-<body>
+<body class="position-relative vh-100">
     
-
-    <header class="bg-primary">
+    <header class="bg-primary position-absolute top-0 w-100">
         <div class="container">
           <div class="row bg-primary">
             <div class="col-sm-12">
@@ -59,20 +57,6 @@
                             </svg>
                           </button>
                         </li>
-
-                        <li class="nav-item position-relative">
-                            <button class="btn btn-primary btn-icon-nav shadow-none" data-bs-toggle="collapse" href="#user-features" role="button" aria-expanded="false">
-                              <div class="d-flex align-items-center">
-                                <img src="./assets/img/user-no-img.png" alt="" class="rounded-circle me-2 border-user-filter user-icon-size-l">
-                                <span class="fw-bold fs-14">Your account</span>
-                              </div>
-                            </button>
-                            <ul class="bg-white user-features list-style-none dropdown-menu-cs bd-r-2 ps-0 collapse" id="user-features">
-                                <li class="p-3"><a href="user-manage.html" class="text-decoration-none text-dark"><i class="fa-regular fa-user p-2 me-2"></i>Account management</a></li>
-                                <li class="p-3"><a href="index.html" class="text-decoration-none text-dark"><i class="fa-solid fa-briefcase p-2 me-2"></i>Trip</a></li>
-                                <li class="p-3"><a href="index.html" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-right-from-bracket p-2 me-2"></i>Log out</a></li>
-                            </ul>
-                        </li>
                       </ul>
                       <!-- Mobile navbar -->
                       <ul
@@ -108,123 +92,110 @@
         </div>
     </header>
 
-    <div class="content h-100 container vh-100">
-        <div class="row py-4">
-            <div class="col-4">
-              <div class="border p-3">
-                <a href="" class="py-3 d-block text-decoration-none active-page">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="user-icon-size-l p-2 me-1 bg-user-light-grey rounded-circle user-setting-option" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                  <span class="fs-14 underline-hover">Personal details</span>
-                  <hr class="hr-color">
-                </a>
-              </div>
-            </div>
-            <div class="col-8" id="ui-validate">
-                <div>
-                    <h2 class="fw-bold py-2 mb-0">Personal information</h2>
-                    <p class="text-secondary">Update your information</p>
-                </div>
-                <hr class="hr-color">
-                <form class="d-flex" id="user-name-change">
-                      <label for="" class="h-100 w-25">Name</label>
-                      <div class="flex-fill d-flex justify-content-between">
-                        <div class="collapse flex-fill pe-3" id="editName">
-                          <label for="" class="fw-500 fs-14 d-block mb-1">Your name <span class="text-danger">*</span></label>
-                          <input type="text" name="name" class="shadow-none m-w-250 form-control" autocomplete="off" required>
-                        </div>
-                        <p class="mb-0 text-secondary fs-14 expanded-field my-1"  data-bs-toggle="collapse" href="#editName" aria-expanded="false">Chau cu bu</p>
-                        <button type="button"
-                        class="btn text-blue expanded-field btn-action2 fw-500 border-0" data-bs-toggle="collapse" href="#editName" role="button" aria-expanded="false">Edit</button>
-                        <div class="collapsed-field">
-                          <button type="button"
-                          class="btn text-blue btn-action2 fw-500 border-0 my-2" data-bs-toggle="collapse" href="#editName" role="button" aria-expanded="false">Cancel</button>
-                          <button class="btn my-2 text-white btn-primary2 fw-500" type="submit">Save</button>
-                        </div> 
-                      </div>
-                </form>
-                <hr class="hr-color">
-                <form class="d-flex" id="user-password-change">
-                  <label for="" class="h-100 w-25">Password</label>
-                  <div class="flex-fill d-flex justify-content-between">
-                    <div class="collapse flex-fill pe-3" id="passwordChange">
-                      <label for="" class="fw-500 fs-14 d-block mb-1">Your phone number <span class="text-danger">*</span></label>
-                      <div class="input-group m-w-250">
-                        <input type="password" name="password" id="user-password-input" class="shadow-none form-control m-w-200 border-end-0" autocomplete="off" required>
-                        <span class="input-group-text bg-white border-start-0" id="show-hide-password" type="button">
-                          <i class="fa-regular fa-eye-slash"></i>
-                        </span>
-                      </div>
-                    </div>
-                    <p class="mb-0 text-secondary fs-14 expanded-field my-1"  data-bs-toggle="collapse" href="#passwordChange" aria-expanded="false">*********</p>
-                    <button type="button"
-                    class="btn text-blue expanded-field btn-action2 fw-500 border-0" data-bs-toggle="collapse" href="#passwordChange" role="button" aria-expanded="false">Edit</button>
-                    <div class="collapsed-field">
-                      <button type="button"
-                      class="btn text-blue btn-action2 fw-500 border-0 my-2" data-bs-toggle="collapse" href="#passwordChange" role="button" aria-expanded="false">Cancel</button>
-                      <button class="btn my-2 text-white btn-primary2 fw-500" type="submit">Save</button>
-                    </div> 
-                  </div>
-                </form>
-                <hr class="hr-color">
-                <form class="d-flex" id="user-phone-change">
-                  <label for="" class="h-100 w-25">Phone number</label>
-                  <div class="flex-fill d-flex justify-content-between">
-                    <div class="collapse flex-fill m-w-250" id="phoneNumber">
-                      <label for="" class="fw-500 fs-14 d-block mb-1">Your phone number <span class="text-danger">*</span></label>
-                      <input type="text" name="phone" class="shadow-none form-control" autocomplete="off"  data-inputmask='"mask": "(+84) 9999-9999"' data-mask required>
-                    </div>
-                    <p class="mb-0 text-secondary fs-14 expanded-field my-1"  data-bs-toggle="collapse" href="#phoneNumber" aria-expanded="false">+(84)333-3333</p>
-                    <button type="button"
-                    class="btn text-blue expanded-field btn-action2 fw-500 border-0" data-bs-toggle="collapse" href="#phoneNumber" role="button" aria-expanded="false">Edit</button>
-                    <div class="collapsed-field">
-                      <button type="button"
-                      class="btn text-blue btn-action2 fw-500 border-0 my-2" data-bs-toggle="collapse" href="#phoneNumber" role="button" aria-expanded="false">Cancel</button>
-                      <button class="btn my-2 text-white btn-primary2 fw-500" type="submit">Save</button>
-                    </div> 
-                  </div>
-                </form>
-                <hr class="hr-color">
+    <div class="content container">
+        <div class="row">
+            <div class="col-12">
+
             </div>
         </div>
     </div>
-
-    <footer class="bg-footer-grey mt-5">
+    
+    <footer class="bg-footer-grey position-absolute bottom-0 w-100">
       <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-               <div>
-                <p class="fs-12 text-center py-3">Copyright © 1996–2022 Booking.com™. All rights reserved.</div>
-              </div>
+        <div class="row py-4">
+          <div class="col-12">
+            <span class="fs-12">Bản quyền © 1996–2022 TLTC.com. Bảo lưu mọi quyền</span>
           </div>
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="text-center mt-2">
-                <p class="fs-12">
-                    Booking.com is part of Booking Holdings Inc., the world leader in online travel and related services.</p>
-              </div>
-              <div class="text-center">
-                <img src="./assets/img/bookinglogo.png" alt="" class="m-3">
-                <img src="./assets/img/pricelinelogo.png" alt="" class="m-3">
-                <img src="./assets/img/kaykaklogo.png" alt="" class="m-3">
-                <img src="./assets/img/agodalogo.png" alt="" class="m-3">
-                <img src="./assets/img/rentalcarslogo.png" alt="" class="m-3">
-                <img src="./assets/img/opentablelogo.png" alt="" class="m-3">
-              </div>
-            </div>
-          </div>
+        </div>
       </div>
     </footer>
 
+    <div class="loading-overlay">
+      <div class="loading-wrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon-loading" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="127px" height="127px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+          <g transform="translate(73,50)">
+          <g transform="rotate(0)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="1">
+            <animateTransform attributeName="transform" type="scale" begin="-0.9s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="-0.9s"></animate>
+          </circle>
+          </g>
+          </g><g transform="translate(68.60739087062379,63.519060802726884)">
+          <g transform="rotate(36)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="0.9">
+            <animateTransform attributeName="transform" type="scale" begin="-0.8s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="-0.8s"></animate>
+          </circle>
+          </g>
+          </g><g transform="translate(57.10739087062379,71.87429987478853)">
+          <g transform="rotate(72)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="0.8">
+            <animateTransform attributeName="transform" type="scale" begin="-0.7s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="-0.7s"></animate>
+          </circle>
+          </g>
+          </g><g transform="translate(42.89260912937621,71.87429987478853)">
+          <g transform="rotate(108)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="0.7">
+            <animateTransform attributeName="transform" type="scale" begin="-0.6s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="-0.6s"></animate>
+          </circle>
+          </g>
+          </g><g transform="translate(31.39260912937621,63.519060802726884)">
+          <g transform="rotate(144)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="0.6">
+            <animateTransform attributeName="transform" type="scale" begin="-0.5s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="-0.5s"></animate>
+          </circle>
+          </g>
+          </g><g transform="translate(27,50)">
+          <g transform="rotate(180)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="0.5">
+            <animateTransform attributeName="transform" type="scale" begin="-0.4s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="-0.4s"></animate>
+          </circle>
+          </g>
+          </g><g transform="translate(31.392609129376208,36.480939197273116)">
+          <g transform="rotate(216)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="0.4">
+            <animateTransform attributeName="transform" type="scale" begin="-0.3s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="-0.3s"></animate>
+          </circle>
+          </g>
+          </g><g transform="translate(42.892609129376204,28.12570012521147)">
+          <g transform="rotate(252)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="0.3">
+            <animateTransform attributeName="transform" type="scale" begin="-0.2s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="-0.2s"></animate>
+          </circle>
+          </g>
+          </g><g transform="translate(57.10739087062379,28.125700125211466)">
+          <g transform="rotate(288)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="0.2">
+            <animateTransform attributeName="transform" type="scale" begin="-0.1s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="-0.1s"></animate>
+          </circle>
+          </g>
+          </g><g transform="translate(68.60739087062379,36.480939197273116)">
+          <g transform="rotate(324)">
+          <circle cx="0" cy="0" r="5" fill="#1d3f72" fill-opacity="0.1">
+            <animateTransform attributeName="transform" type="scale" begin="0s" values="0.99 0.99;1 1" keyTimes="0;1" dur="1s" repeatCount="indefinite"></animateTransform>
+            <animate attributeName="fill-opacity" keyTimes="0;1" dur="1s" repeatCount="indefinite" values="1;0" begin="0s"></animate>
+          </circle>
+          </g>
+          </g>
+          <!-- [ldio] generated by https://loading.io/ --></svg>
+      </div>  
+    </div>
+
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/jquery.validate.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/select2.min.js"></script>
     <script src="./assets/js/toolTip.js"></script>
-    <script src="./assets/js/inputmask/jquery.inputmask.min.js"></script>
-    <script src="./assets/js/additional-methods.min.js"></script>
-    <script src="./assets/js/custom/userProfile.js"></script>
+    <script>
+
+
+        
+    </script>
 </body>
 </html>

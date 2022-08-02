@@ -470,10 +470,8 @@ body::-webkit-scrollbar-thumb{
 }
 
 .img-article{
-    min-width: 172px;
-    min-height: 200px;
-    max-width: 200px;
-    max-height: 200px;
+    width: 200px;
+    height: 200px;
 }
 
 
@@ -1054,4 +1052,41 @@ input.ignore-validate{
 
 .send-mail-user{
     animation:slide-top 0.3s linear both}@keyframes slide-top{0%{transform:translateY(100px)}100%{transform:translateY(0)}
+}
+
+.customer-sign-in .has-login{
+    display: none !important;
+}
+
+.customer-sign-in .not-login{
+    display: block !important;
+}
+
+.customer-check .not-login{
+    display: none !important;
+}
+
+.customer-check .has-login{
+    display: block !important;
+}
+
+.limit-line{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+
+.loading-page{
+    position: fixed;
+    inset: 0
+}
+
+.loading-wrapper{
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
 }

@@ -69,8 +69,20 @@
                         </svg>
                       </button>
                     </li>
-
-                    <li class="nav-item me-2">
+                    <li class="nav-item position-relative">
+                      <button class="btn btn-primary btn-icon-nav shadow-none" data-bs-toggle="collapse" href="#user-features" role="button" aria-expanded="false">
+                        <div class="d-flex align-items-center">
+                          <img src="./assets/img/user-no-img.png" alt="" class="rounded-circle me-2 border-user-filter user-icon-size-l">
+                          <span class="fw-bold fs-14">Your account</span>
+                        </div>
+                      </button>
+                      <ul class="bg-white user-features list-style-none dropdown-menu-cs bd-r-2 ps-0 collapse" id="user-features">
+                          <li class="p-3"><a href="user-manage.html" class="text-decoration-none text-dark"><i class="fa-regular fa-user p-2 me-2"></i>Account management</a></li>
+                          <li class="p-3"><a href="index.html" class="text-decoration-none text-dark"><i class="fa-solid fa-briefcase p-2 me-2"></i>Trip</a></li>
+                          <li class="p-3"><a href="index.html" class="text-decoration-none text-dark"><i class="fa-solid fa-arrow-right-from-bracket p-2 me-2"></i>Log out</a></li>
+                      </ul>
+                  </li>
+                    <!-- <li class="nav-item me-2">
                       <a href="login.html" class="btn btn-sm btn-primary fw-500 btn-sm text-white border">
                         Đăng chỗ nghỉ của quí vị
                       </a>
@@ -80,7 +92,7 @@
                     </li>
                     <li class="nav-item">
                       <a href="login.html" class="btn btn-sm bg-white text-blue fw-500">Đăng nhập</a>
-                    </li>
+                    </li> -->
                   </ul>
                   <!-- Mobile navbar -->
                   <ul class="navbar-nav 
@@ -115,7 +127,7 @@
         </div>
       </div>
     </div>
-    <div class="container mt-5 py-3">
+    <div class="container mt-5 py-4">
       <div class="row">
         <div class="col-sm-12">
           <ul class="nav mt-md-3 mt-lg-0">

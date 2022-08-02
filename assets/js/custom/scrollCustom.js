@@ -10,7 +10,7 @@ $(window).scroll(function() {
         accommodationField.css('position','fixed');
         accommodationField.css('top','0');
         accommodationField.css('z-index','999');
-        accommodationFilter.css('transform','translateY(calc('+ navHeaderHeight + 'px - 8px))');
+        accommodationFilter.css('transform','translateY(calc('+ navHeaderHeight + 'px - 16px))');
       }
       }
       
